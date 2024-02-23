@@ -8,19 +8,19 @@ This Document will describe how to configure XUI.ONE Painel to PROXY LIVE STREAM
 
 ## Xui.One WEB Admin Interface Setup
 ### General Settings
-#### Streaming
+ #### Streaming
  - DISABLE "Encrypt HLS Segments"
  - ENABLE "Allow CDN / Forwarding"
- - API
+ #### API
  - ENABLE "Enable Cloudflare"
- - Security
+ #### Security
  - ENABLE "Match Subnet of IP"
  - DISABLE "Logout On IP Change"
  - DISABLE "Restrict to Same IP"
 
  ## SERVERS
- - MANAGE SERVERS
- - EDIT MAIN SERVER
+ ### MANAGE SERVERS
+ #### EDIT MAIN SERVER
  - ADD IN "Domain Names" your-cdn-domain.com (Same domain configured in CDN Resource)
 
 ## Xui.One CLI/CONSOLE Setup
