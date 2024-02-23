@@ -7,7 +7,7 @@ XUI.ONE is a Popular OTT Middleware/Transcoding/Origin-Server
 This Document will describe how to configure XUI.ONE Painel to PROXY LIVE STREAMING AND VOD CONTENT With a Public CDN Service Provider.
 
 ## Xui.One WEB Admin Interface Setup
- - General Settings
+### General Settings
  - Streaming
  - DISABLE "Encrypt HLS Segments"
  - ENABLE "Allow CDN / Forwarding"
