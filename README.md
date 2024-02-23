@@ -18,9 +18,9 @@ This Document will describe how to configure XUI.ONE Painel to PROXY LIVE STREAM
  - DISABLE "Logout On IP Change"
  - DISABLE "Restrict to Same IP"
 
- ## SERVERS
- ### MANAGE SERVERS
- #### EDIT MAIN SERVER
+ ### SERVERS
+ #### MANAGE SERVERS
+ ##### EDIT MAIN SERVER
  - ADD IN "Domain Names" your-cdn-domain.com (Same domain configured in CDN Resource)
 
 ## Xui.One CLI/CONSOLE Setup
