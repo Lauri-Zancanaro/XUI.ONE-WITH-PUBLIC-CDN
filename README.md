@@ -1,5 +1,6 @@
 # XUI.ONE-WITH-PUBLIC-CDN
-How to Configure XUI.ONE with Public CDN Service Providers
+
+# How to Configure XUI.ONE with Public CDN Service Providers
 
 XUI.ONE is a Popular OTT Middleware/Transcoding/Origin-Server
 
@@ -31,6 +32,7 @@ Add this lines:
 real_ip_header X-Forwarded-For;
 set_real_ip_from 0.0.0.0/0; ### use 0.0.0.0/0 or the prefixes from your CDN PROVIDER
 set_real_ip_from 0::/0
+
 
 # EXMPLE WITH PREFIXES FROM CLOUDFLARE - IPv4
 set_real_ip_from 173.245.48.0/20;
