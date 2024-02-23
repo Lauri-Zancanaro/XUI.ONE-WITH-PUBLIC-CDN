@@ -31,7 +31,7 @@ Add this lines:
 ```console
 real_ip_header X-Forwarded-For;
 set_real_ip_from 0.0.0.0/0; ### use 0.0.0.0/0 or the prefixes from your CDN PROVIDER
-set_real_ip_from 0::/0
+set_real_ip_from 0::/0;
 
 
 # EXMPLE WITH PREFIXES FROM CLOUDFLARE - IPv4
