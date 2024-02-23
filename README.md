@@ -8,7 +8,7 @@ This Document will describe how to configure XUI.ONE Painel to PROXY LIVE STREAM
 
 ## Xui.One WEB Admin Interface Setup
 ### General Settings
- - Streaming
+#### Streaming
  - DISABLE "Encrypt HLS Segments"
  - ENABLE "Allow CDN / Forwarding"
  - API
