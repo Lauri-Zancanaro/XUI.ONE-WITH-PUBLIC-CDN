@@ -6,29 +6,29 @@ XUI.ONE is a Popular OTT Middleware/Transcoding/Origin-Server
 
 This Document will describe how to configure XUI.ONE Painel to PROXY LIVE STREAMING AND VOD CONTENT With a Public CDN Service Provider.
 
-Xui.One WEB Admin Interface Setup
- => General Settings
- =>=> Streaming
- =>=>=> DISABLE "Encrypt HLS Segments" 
- =>=>=> ENABLE "Allow CDN / Forwarding"
- =>=> API
- =>=>=> ENABLE "Enable Cloudflare"
- =>=> Security
- =>=>=> ENABLE "Match Subnet of IP" 
- =>=>=> DISABLE "Logout On IP Change"
- =>=>=> DISABLE "Restrict to Same IP"
+## Xui.One WEB Admin Interface Setup
+ - General Settings
+ - Streaming
+ - DISABLE "Encrypt HLS Segments"
+ - ENABLE "Allow CDN / Forwarding"
+ - API
+ - ENABLE "Enable Cloudflare"
+ - Security
+ - ENABLE "Match Subnet of IP"
+ - DISABLE "Logout On IP Change"
+ - DISABLE "Restrict to Same IP"
 
- => SERVERS
- =>=> MANAGE SERVERS
- =>=>=> EDIT MAIN SERVER
- =>=>=>=> ADD IN "Domain Names" your-cdn-domain.com (Same domain configured in CDN Resource)
+ ## SERVERS
+ - MANAGE SERVERS
+ - EDIT MAIN SERVER
+ - ADD IN "Domain Names" your-cdn-domain.com (Same domain configured in CDN Resource)
 
-Xui.One CLI/CONSOLE Setup
+## Xui.One CLI/CONSOLE Setup
 
 Edit file /home/XUI/bin/nginx/confcloudflare.conf
 
 Add this lines:
-
+```console
 real_ip_header X-Forwarded-For;
 set_real_ip_from 0.0.0.0/0; ### use 0.0.0.0/0 or the prefixes from your CDN PROVIDER
 set_real_ip_from 0::/0
@@ -58,12 +58,7 @@ set_real_ip_from 2803:f800::/32;
 set_real_ip_from 2405:b500::/32;
 set_real_ip_from 2405:8100::/32;
 set_real_ip_from 2a06:98c0::/29;
+'''
+
+
 set_real_ip_from 2c0f:f248::/32;
-
-
-
-
-
-
-
-
