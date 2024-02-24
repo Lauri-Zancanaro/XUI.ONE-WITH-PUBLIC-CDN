@@ -29,8 +29,8 @@ Edit file /home/XUI/bin/nginx/conf/cloudflare.conf
 
 Add this lines:
 ```console
-set_real_ip_from 0.0.0.0/0; ### use 0.0.0.0/0 or the prefixes from your CDN PROVIDER
-set_real_ip_from 0::/0;
+set_real_ip_from 0.0.0.0/0; # use 0.0.0.0/0 or the prefixes from your CDN PROVIDER
+set_real_ip_from 0::/0; # use 0::/0 or the prefixes from your CDN PROVIDER
 
 
 # EXMPLE WITH PREFIXES FROM CLOUDFLARE - IPv4
