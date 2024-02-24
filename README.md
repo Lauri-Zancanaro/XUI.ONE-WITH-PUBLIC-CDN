@@ -25,7 +25,7 @@ This Document will describe how to configure XUI.ONE Painel to PROXY LIVE STREAM
 
 ## Xui.One CLI/CONSOLE Setup
 
-Edit file /home/XUI/bin/nginx/confcloudflare.conf
+Edit file /home/XUI/bin/nginx/conf/cloudflare.conf
 
 Add this lines:
 ```console
